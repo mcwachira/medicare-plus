@@ -258,6 +258,27 @@ const Home = () => {
 
                 </div>
             </section>
+
+                   {/* ============ Faq section end ================= */}
+
+            {/* =========== Testimonial Start=========== */}
+        
+        <div className="container">
+            <div className='xl:w-[470px] mx-auto'>
+                <h2 className="heading text-center">
+
+                    What our Patients say
+                </h2>
+                <p className="text__par text-center">
+                    World-class care from everyone . Our Heath system offers unmatched, expert healthcare
+                </p>
+
+
+            </div>
+        </div>
+
+
+            {/* =========== Testimonial End=========== */}
         </>
     )
 }
