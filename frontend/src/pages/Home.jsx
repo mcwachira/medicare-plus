@@ -12,8 +12,9 @@ import avatarIcon from '../assets/images/avatar-icon.png';
 import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
+import ServiceList from '../components/Services/ServiceList';
 
-// import ServiceList from '../components/Services/ServiceList';
+
 // import DoctorList from '../components/Doctors/DoctorList';
 
 
@@ -161,7 +162,7 @@ const Home = () => {
                         <p className='text__para text-center'>World-class care for everyone. Our health system offers unmatched, expert health care.</p>
                     </div>
 
-                    {/* <ServiceList /> */}
+                    <ServiceList />
                 </div>
             </section>
             {/* ========= Services Section End =========== */}
