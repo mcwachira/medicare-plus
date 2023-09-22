@@ -1,6 +1,7 @@
 import React from 'react'
 
 import heroImg01 from '../assets/images/hero-img01.png';
+import faqImg from '../assets/images/faq-img.png'
 import heroImg02 from '../assets/images/hero-img02.png';
 import heroImg03 from '../assets/images/hero-img03.png';
 import icon01 from '../assets/images/icon01.png';
@@ -14,6 +15,8 @@ import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
 import ServiceList from '../components/Services/ServiceList';
 import DoctorList from '../components/Doctors/DoctorsList';
+import FaqList from '../components/Faq/FaqList';
+
 
 
 // import DoctorList from '../components/Doctors/DoctorList';
@@ -231,6 +234,30 @@ const Home = () => {
 
 
             {/* =========== Doctors End=========== */}
+            
+            <section>
+                <div className="container">
+                    <div className='flex justify-between gap-[50px] lg:gap-0'>
+                    <div className='w-1/2 hidden md:block'>
+                        <img src={faqImg} alt=""/>
+
+                        </div>
+
+                        <div className="w-full md:w-1/2">
+
+                            <h2 className="heading">
+                                Most Beloved Questions by our Patients
+                            </h2>
+
+                            <FaqList/>
+                        </div>
+
+
+
+                </div>
+
+                </div>
+            </section>
         </>
     )
 }
