@@ -18,19 +18,37 @@ const registerUser = asyncHandler(async  (req, res) => {
     else if(role ==='doctor'){
         user = Doctor.findOne({email})
     }
-    // const userExist = await UserSchema.findOne({email})
 
-    // if(userExist){
-    //     res.status(400)
-    //     throw new Error('user with that email exist')
-    // }
 
-    const user =  await UserSchema.create({
-        name,
-        email,
-        password
-    })
+    const userExist = await User.findOne({email})
 
+    if(userExist){
+        res.status(400)
+        throw new Error('user with that email exist')
+    }
+
+
+    if(role === 'patient'){
+        user= new User({
+name, 
+email,
+ password,
+ photo,
+ gender, 
+ role
+        })
+    }else if(role === 'doctor'){
+        user= new Doctor({
+            name, 
+            email,
+             password,
+             photo,
+             gender, 
+             role
+        })            
+    }
+
+    await user.save()
     if(user){
         generateToken(res, user._id)
         res.status(201).json({
