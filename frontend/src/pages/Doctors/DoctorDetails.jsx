@@ -3,6 +3,7 @@ import doctorImg from '../../assets/images/doctor-img02.png'
 import starIcon from '../../assets/images/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Feedback from './Feedback'
+import SidePanel from './SidePanel'
 
 const DoctorDetails = () => {
 
@@ -10,7 +11,7 @@ const DoctorDetails = () => {
   return (
 <section>
   <div className='max-w-[1170px] px-5 mx-auto'>
-    <div className="grid md:grid-col-3 gap-[50px]">
+    <div className="grid sm:grid-col-3 gap-[50px]">
 
       <div className="md:col-span-2">
 
@@ -57,8 +58,13 @@ Feedback</button>
 </div>
   
       </div>
-    </div>
 
+ 
+
+  </div>
+  <div>
+        <SidePanel/>
+    </div>
   </div>
 </section>
   )

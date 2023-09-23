@@ -66,7 +66,7 @@ e.preventDefault()
         </textarea>
     </div>
 
-    <button classNmae='btn' onSubmit={handelSubmitReview} type='submit'>
+    <button classNmae='btn' onSubmit={handleSubmitReview} type='submit'>
 
 Submit Feedback
         </button>
