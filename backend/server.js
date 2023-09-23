@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import helmet from 'helmet'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-// import { notFound, errorHandler} from './middleware/errorMiddleware.js'
+import { notFound, errorHandler} from './middleware/errorMiddleware.js'
 // import products from './data/products.js'
 import dotenv from 'dotenv'
 
