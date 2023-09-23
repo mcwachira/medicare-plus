@@ -15,7 +15,7 @@ const DoctorAbout = () => {
             </span>
         </h3>
 
-        <p className="text_para">
+        <p className="text__para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A vero placeat saepe consequatur accusamus doloremque, sapiente ipsam alias dolore laborum quos libero blanditiis illo magnam assumenda quia. Nemo, veritatis voluptate.
         </p>
     </div>

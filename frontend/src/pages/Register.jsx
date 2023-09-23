@@ -4,7 +4,7 @@ import singupImg from '../assets/images/signup.gif'
 import { useState } from 'react'
 import avatar from '../assets/images/avatar-icon.png'
 
-const SignUp = () => {
+const Register = () => {
 
   const [selectedFile, setSelectedFile] = useState(null)
   const [previewUrl, setPreviewUrl] = useState(null)
@@ -133,4 +133,4 @@ Gender: <select name='role' className='text-textColor font-semibold text-[15px] 
   )
 }
 
-export default SignUp
+export default Register
