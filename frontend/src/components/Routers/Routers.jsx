@@ -3,10 +3,11 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../../pages/Home'
 import Doctors from '../../pages/Doctors/Doctors'
 import DoctorDetails from '../../pages/Doctors/DoctorDetails'
-import Login from '../../pages/Login'
+
 import Contact from '../../pages/Contact'
 import SignUp from '../../pages/SignUp'
 import Services from '../../pages/Services'
+import Login from '../../pages/Doctors/Login'
 
 const Routers = () => {
   return (
