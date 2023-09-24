@@ -1,5 +1,7 @@
 import express from 'express'
-import { registerUser } from '../controllers/authController'
+import { registerUser } from '../controllers/authController.js'
+
+
 // import {
 //     authUser, registerUser, logOutUser, getUserProfile, updateUserProfile,    getUsers,
 //     getUserById ,updateUser, deleteUser

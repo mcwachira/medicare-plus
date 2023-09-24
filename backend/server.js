@@ -4,12 +4,14 @@ import helmet from 'helmet'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import { notFound, errorHandler} from './middleware/errorMiddleware.js'
-// import products from './data/products.js'
 import dotenv from 'dotenv'
 
 dotenv.config();
 import  connectDb from './config/db.js'
+import authRoutes from "./routes/authRoutes.js";
+
 import path from 'path'
+
 
 
 
@@ -37,6 +39,19 @@ app.use(morgan('tiny')) //used to log request from the frontend
 //get cookies
 app.use(cookieParser())
 
+//routes
+
+
+
+app.use('/api/v1/auth', authRoutes)
+
+// app.use('/api/v1/orders', orderRoutes)
+// app.use('/api/v1/upload', uploadRoutes)
+
+//paypal route
+app.get('/api/config/paypal', (req, res) => {
+    res.send({clientId:process.env.PAYPAL_CLIENT_ID})
+})
 
 
 const __dirname = path.resolve(); //sets __dirname to current directory

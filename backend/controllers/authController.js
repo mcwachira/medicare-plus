@@ -1,6 +1,7 @@
 import asyncHandler from "../middleware/asyncHandler.js";
 import Doctor from "../models/DoctorSchema.js";
-import User from "../models/UserSchema.js";
+import User from "../models/UserModel.js";
+
 import generateToken from '../utils/generateToken.js'
 
 //@desc Register a new user
